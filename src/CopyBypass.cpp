@@ -1,16 +1,16 @@
 #include <Geode/Geode.hpp>
-#include <Geode/modify/GameLevelManager.hpp>
+#include <Geode/modify/GJGameLevel.hpp>
 
 using namespace geode::prelude;
 
-class $modify(GameLevelManager) {
-    bool canCopyLevel(GJGameLevel* level) {
+class $modify(GJGameLevel) {
+    bool canCopyLevel() {
         bool isBypassEnabled = Mod::get()->getSettingValue<bool>("bypass-copy");
 
         if (isBypassEnabled) {
             return true;
         }
 
-        return $orig(level);
+        return GJGameLevel::canCopyLevel();
     }
 };
