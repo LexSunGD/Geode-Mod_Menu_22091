@@ -4,7 +4,6 @@
 using namespace geode::prelude;
 
 class $modify(GameLevelManager) {
-
     bool canCopyLevel(GJGameLevel* level) {
         bool isBypassEnabled = Mod::get()->getSettingValue<bool>("bypass-copy");
 
