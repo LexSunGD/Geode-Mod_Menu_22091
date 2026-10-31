@@ -11,6 +11,6 @@ class $modify(GameLevelManager) {
             return true;
         }
 
-        return GameLevelManager::canCopyLevel(level);
+        return $orig(level);
     }
 };
