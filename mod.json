@@ -6,21 +6,26 @@
 		"mac": "2.2091",
 		"ios": "2.2091"
 	},
-	"id": "lexsungd.basics_mods",
+	"id": "lexsungd.mod_menu",
 	"version": "1.0.0",
-	"name": "Basics Mods",
+	"name": "Mod Menu 2.2091",
 	"developer": "LexSunGD",
-	"description": "Basics Geometry Dash Mods.",
-	"repository": "https://github.com/LexSunGD/Geode-Basics_Mods",
+	"description": "A mod menu for 2.2091.",
+	"repository": "https://github.com/LexSunGD/Geode-Mod_Menu_22091",
 	"tags": [],
 	"settings": {
 		"noclip-enabled": {
-            "name": "Activar Noclip",
+            "name": "Noclip",
             "type": "bool",
             "default": false
 		},
         "bypass-icons": {
             "name": "Icon Bypass",
+            "type": "bool",
+            "default": true
+		},
+		"bypass-copy": {
+            "name": "Copy Hack",
             "type": "bool",
             "default": true
 		},
